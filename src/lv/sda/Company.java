@@ -35,4 +35,14 @@ public class Company {
         }
         return sum / this.employees.length;
     }
+
+    //get random employee
+    public Employee getEmployee(){
+        int random =(int) (Math.random() * 10);
+        if(random >= this.employees.length){
+            return getEmployee(); //keep calling the array until a value less than the length of the employees array achived
+        }
+        else return this.employees[random]; //return the employee at that index
+    }
+
 }

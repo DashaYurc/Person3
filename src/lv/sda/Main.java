@@ -20,5 +20,6 @@ public class Main {
 
         System.out.println("The average age of Microsoft employees is " + microsoft.getAverage());
         System.out.println("The average age of Google employees is " + google.getAverage());
+        System.out.println(google.getEmployee().getName());
     }
 }
