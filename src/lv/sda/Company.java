@@ -1,14 +1,19 @@
 package lv.sda;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Company {
 
     private Employee [] employees;
     private String companyName;
 
+
     public Company(String companyName, Employee[] employees){
         this.companyName = companyName;
         this.employees = employees;
     }
+
 
     public Employee[] getEmployees() {
         return employees;
@@ -35,6 +40,8 @@ public class Company {
         }
         return sum / this.employees.length;
     }
+
+
 
     //get random employee
     public Employee getEmployee(){
